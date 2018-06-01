@@ -1,0 +1,41 @@
+Figure out how to get permission and use the Spotify API
+    Making it secure so that people can log in without having their info stolen
+    restricting access when someone "joins a party" 
+        they shouldn't be able to see or modify the user's songs, history, or 
+        playlists
+    How to search their song database
+    How to create a queue
+    Might be easier to implement the queue on our end, and we only send the next
+        song information to Spotify when it's been finalized?
+            maybe set a 5 second cap. When song is 5 sec from finishing,
+            whatever the next song in our queue is, that's the song getting sent
+            to Spotify's servers.
+
+Pick a language to use - probably Python, maybe Javascript/HTML?
+
+How are we going to actually code the UI that loads on the site? 
+    Javascript/HTML? Eugene this is you
+
+How to host: look into Github's free website hosting service
+
+Features to Implement
+-Home screen
+-Join/create party
+    -secure database to hold information about current parties
+        -information like: how many people in party, who host is, IP of people,
+         queue
+
+
+Issues: 
+-What if someone reloads the page? How to stop them from re-voting?
+    Maybe can use cookies or IP address?
+
+TODO:
+-Start with home screen and connecting 1 user's spotify
+-Be able to search songs
+-Implement a priority queue and have it be able to play song's on the user's
+    device
+-Allow people to "join a party
+-Allow multiple parties to be hosted - multithreading?
+-Encryption
+
